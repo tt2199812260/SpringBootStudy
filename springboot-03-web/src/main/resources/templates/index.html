@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <!--用th:text不会解析html，用th:utext会解析html，在页面中显示相应的样式-->
+    <div th:text="${msg}"></div>
+    <div th:utext="${msg}"></div>
+
+    <hr>
+
+    <!--数组遍历-->
+    <h3 th:each="pet:${pets}" th:text="${pet}"></h3>
+
+</body>
+</html>

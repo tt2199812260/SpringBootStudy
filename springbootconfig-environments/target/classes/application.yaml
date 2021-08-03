@@ -1,0 +1,20 @@
+dog:
+  name: Fourth
+  age: 4
+spring:
+  profiles:
+#    active: dev
+    active: test
+---
+dog:
+  name: fivth
+  age: 5
+spring:
+  profiles: dev
+
+---
+dog:
+  name: sixth
+  age: 6
+spring:
+  profiles: test

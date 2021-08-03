@@ -1,0 +1,26 @@
+dog:
+  name: Fourth
+  age: 4
+
+#环境切换
+spring:
+  profiles:
+#    active: dev
+    active: test
+
+# ---  ：环境区域的分割符  ↑为默认环境，在里面进行环境的切换
+---
+dog:
+  name: fivth
+  age: 5
+
+#环境名称定义
+spring:
+  profiles: dev
+---
+dog:
+  name: sixth
+  age: 6
+#环境名称定义
+spring:
+  profiles: test

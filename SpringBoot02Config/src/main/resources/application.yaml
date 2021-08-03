@@ -1,0 +1,15 @@
+#给实体类赋值
+person:
+  name: lutao${random.uuid}
+  age: 18
+  happy: true
+  birth: 2021/7/27
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - game
+    - boy
+  pet:
+    kinds: dog
+    name: 小七
+    age: 3
